@@ -56,7 +56,7 @@ public class ShieldDestroyer extends Module {
         sendingPackets = true;
 
         Vec3d originalPos = mc.player.getEntityPos();
-        double fallHeight = 2;
+        double fallHeight = 3;
 
         Vec3d fakeUp = originalPos.add(0, fallHeight, 0);
 
