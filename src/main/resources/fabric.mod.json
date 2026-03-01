@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "quack-tools",
+  "version": "${version}",
+  "name": "QuackTools",
+  "description": "An addon for meteor client adding multiple useful features.",
+  "authors": [
+    "Quackerx"
+  ],
+  "icon": "",
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "com.quack.tools.QuackTools"
+    ]
+  },
+  "mixins": [
+    "quack-tools.mixins.json"
+  ],
+  "custom": {
+    "meteor-client:color": "225,25,25",
+    "modmenu": {
+      "parent": {
+        "id": "quack-tools"
+      }
+    }
+  },
+  "depends": {
+    "java": ">=21",
+    "minecraft": ["${mc_version}"],
+    "meteor-client": "*"
+  }
+}
